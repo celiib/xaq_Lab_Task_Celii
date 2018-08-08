@@ -1,0 +1,4 @@
+Overall: Implemented the Single Factor Analyzer as described in the paper "The EM Algorithm for Mixtures of FactorAnalyzers".
+Project files: 
+1) single_Factor_Analyzer.py: implements a covariance function that interfaces with PyTorch a the single factor analyzer function(sfa) using the equations described in the paper. All code is written using PyTorch even though none is sent to the GPU because my computer does not have a GPU compatible with CUDA, so by writing it using mainly the PyTorch tensor structures, it shows potential to be parallelized using a CUDA enabled computer
+2) sfa_demo.py: demonstrates the functionality of the sfa function written. The demo uses a data model created from stacking 2 random distributions, calls the sfa function to calculate the factor loading and diagnoal uniqueness matrix from the model, and then graphs the log likelihood curve to demonstrate the progress of fitting the parameters. 
