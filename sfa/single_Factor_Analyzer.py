@@ -71,12 +71,7 @@ def sfa(X,k=3,loops=100,tolerance=0.0001):
     #makes random matrix of size (# of components)x(number of factors)
     #then scales each of these by sqrt(scale/number of factors) to get the loading factors
 
-    #L=torch.randn(width, k, dtype=torch.float32)*(scaling_Factor/k)**(1/2.0)
-    FL = torch.tensor([[1.1290  ,  0.7853  ,  0.6562],
-                        [0.0528  ,  0.5253  , -0.0142],
-                        [0.4302  , -0.3982  ,  0.4852],
-                        [0.5423  ,  0.1682  ,  0.0316],
-                      [-0.4978  , -0.4876   , 0.1429]  ]);
+    FL=torch.randn(width, k, dtype=torch.float32)*(scaling_Factor/k)**(1/2.0)
 
 
     #print(FL)
