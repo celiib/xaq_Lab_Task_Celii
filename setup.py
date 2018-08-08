@@ -10,5 +10,5 @@ setup(
     url = 'https://github.com/sheriferson/simplestatistics',
     download_url = 'https://github.com/sheriferson/simplestatistics/tarball/0.2.5',
     license='Creative Commons Attribution-Noncommercial-Share Alike license',
-    long_description=open('README.txt').read()
+    long_description=open('README.md').read()
 )
